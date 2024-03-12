@@ -22,12 +22,12 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 
 A seguir, tem disponibilizado as 3 formas de realizar o Deploy da aplicação: 
 
-🛠 Executando Via Terminal
+🛠 **Executando Via Terminal**
 ```
 java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost/vollmed_api -DDATASOURCE_USERNAME=root -DDATASOURCE_PASSWORD=root -jar target/api-0.0.1-SNAPSHOT.jar 
 ```
 
-🛠 Build com arquivo .war
+🛠 **Build com arquivo .war**
 1) Adicionar a tag <packaging>war</packaging> no arquivo pom.xml do projeto, devendo essa tag ser filha da tag raiz <project>:
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -72,8 +72,8 @@ public class ApiApplication extends SpringBootServletInitializer {
 }
 ```
 
-🛠 GraalVM Native Image
-- **[Documentação]([https://www.oracle.com/java](https://www.graalvm.org/native-image))**
+🛠 **GraalVM Native Image**
+- **[Documentação]((https://www.graalvm.org/native-image))**
 
 1) Adicionar plugin no arquivo pom.xml:
 ```
